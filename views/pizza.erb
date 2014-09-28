@@ -1,0 +1,15 @@
+<h2 align="center" ><%= @p.title %></h2>
+<h3 align="center" ><%= @p.description %></h2>
+
+<div class="container">
+
+	<div  class="row">
+		<div align="center" class="col-md-2"><img src="<%= @p.path_to_image %>" /> </div>
+		<div  class="col-md-2">Стоимость: <%= @p.price %> рублей</div><br/>
+		<div  class="col-md-2">Размер: <%= @p.size %> см</div><br/>
+		<div  class="col-md-2"><%= @p.is_spicy ? "Острая" : "Не острая" %></div><br/>
+		<div  class="col-md-3"><%= @p.is_veg ? "Не содержит животных жиров" : "" %></div><br/>
+		<div  class="col-md-2"><%= @p.is_best_offer ? "Лучшее предложение" : "" %></div><br/>
+	</div>
+
+</div>

@@ -1,0 +1,12 @@
+<h2 align="center" >Какую пиццу желаете попробовать?</h2>
+
+<div style="margin: auto" class="container">
+
+	<div  class="row">
+		<% @products.each do |pizza| %>
+			  <div align="center" class="col-md-4"><img src="<%= pizza.path_to_image %>" /> <a href="products/<%= pizza.id %>"><p style="font-size: 20px; color: #719b16; font-family: Comic Sans MS"><%= pizza.title %></p></a></div>			  
+		<% end %>
+	</div>
+
+</div>
+
