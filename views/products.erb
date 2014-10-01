@@ -1,15 +1,21 @@
 <h2 align="center" >Какую пиццу желаете попробовать?</h2>
 
 <div style="margin: auto" class="container">
+						<br/>
+						<div  align="center" style="border-radius: 4px; border-color: #4cae4c; margin: auto; width: 400px; background-color: #5cb85c; color: #fff" align="center" id="basket">
+							Add items in your basket
+						</div>
+						<br/>
 
 	<div  class="row">
 		<% @products.each do |pizza| %>
 			  <div align="center" class="col-md-4">
-			  	<a style="text-decoration: none" href="products/<%= pizza.id %>"><img src="<%= pizza.path_to_image %>" /><p style="font-size: 20px; color: #719b16; font-family: Comic Sans MS"><%= pizza.title %></p></a>
+			  	<a style="text-decoration: none" href="products/<%= pizza.id %>"><img src="<%= pizza.path_to_image %>" /><p style="font-size: 20px; color: #5cb85c; font-family: Comic Sans MS"><%= pizza.title %></p></a>
 			  		<buttontype="submit"  class="btn btn-sm btn-success" onclick="add_to_cart(<%= pizza.id %>)">Add to cart</button>
-			  </div>			  
+			  	</div>			  
 		<% end %>
 	</div>
+
 
 </div>
 
