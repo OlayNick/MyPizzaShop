@@ -41,6 +41,7 @@ for (var i = 0; i < window.localStorage.length; i++) {
  
          
 }
+
 document.getElementById("basket").innerHTML = "Your basket contains " + total + " items";
  
 }
