@@ -28,3 +28,7 @@ get '/products/:id' do
 	@p = Product.find params[:id]
 	erb :pizza
 end
+
+post '/cart' do
+  "Hello World"
+end
