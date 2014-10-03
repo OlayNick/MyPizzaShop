@@ -30,5 +30,5 @@ get '/products/:id' do
 end
 
 post '/cart' do
-  "Hello World"
+   	erb :cart
 end
