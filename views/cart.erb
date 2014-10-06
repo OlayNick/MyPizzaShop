@@ -1,63 +1,28 @@
-<html>
-	<head>
-		<meta charset='utf-8'>
-		<title>WELCOME TO INTERNET!</title>
-		<style class="text/css">
-			body {
-				background-color: black;
-				display:table; 		/* today */
-				display:flex;		/* tomorrow & only for body */
-				height:100%;		/* today & tomorrow */
-				width:100%;		/* today only */
-				margin:0;
-				display:table-cell;	/* today */
-				vertical-align:middle;	/* today, no need tomorrow */
-				display:flex;		/* tomorrow */
-			}
+<table class="table table-striped">
+  <thead>
+		<tr>
+			<th>Наименование товара</th>
+			<th>Количество</th>
+		</tr>
+	</thead>
 
-			h1 {
-				margin:auto;		/* today & tomorow */
-				display:table;		/* today only */
-				text-transform: uppercase;
-				text-align: center;
-				font-family: cursive;
-				font-size: 700%;
-				font-style: italic;
-			}
+	<tbody>
+		
+			<tr>
+				<td>ola</td>
+				<td>ola</td>
+			</tr>
+		
+	</tbody>
+</table>
 
-			h1.hidden {
-				color: black;
-			}
+<script type="text/javascript">
 
-			h1.load {
-				color: white;
-				-webkit-animation: fadein 5s; /* Chrome, Safari, Opera */
-				animation: fadein 5s;
-			}
+$(function() {
 
-			/* Chrome, Safari, Opera */
-			@-webkit-keyframes fadein {
-				0% {color: black; font-size: 200%}
-				10% {color: black; font-size: 200%}
-				100% {color: white; font-size: 700%}
-			}
+	update_orders_input();
+	update_orders_button();
 
-			@keyframes fadein {
-				0% {color: black; font-size: 200%}
-				10% {color: black; font-size: 200%}
-				100% {color: white; font-size: 700%}
-			}
-		</style>
-	</head>
-	<body>
-		<audio id="sound" autoplay>
-			<source src="http://net.madringtones.org/new/15/425934/files/425934.mp3" />
-		</audio>
-		<h1 id="label" class="hidden">The Internet!</h1>
-		<script type="text/javascript">
-			document.getElementById("sound").onplay = function() {
-				document.getElementById("label").className = 'load';
-			};
-		</script>
-	</body>
-</html>
+});
+
+</script>
