@@ -42,7 +42,6 @@ function update_orders_button()
 	$('#orders_button').val(text);
 }
 
-
 function cart_get_number_of_items()
 {
 	var cnt = 0;
