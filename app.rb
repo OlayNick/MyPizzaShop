@@ -31,7 +31,13 @@ end
 
 post '/cart' do
 	orders_input = params[:orders]
-	@orders = parse_orders_input orders_input
+	@items = parse_orders_input orders_input
+
+	@items.each do |item|
+		#id, cnt
+		item[0] = @products.find(item[0])
+	end
+
    	erb :cart
 end
 
