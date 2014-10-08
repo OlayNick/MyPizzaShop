@@ -1,0 +1,12 @@
+<h2> Спасибо за заказ! </h2>
+
+<h3> Ваш заказ </h3>
+
+<% @orders.each do |item| %>
+	<dev>				
+		<p>Имя: <%= item.name %></p>
+		<p>Телефон: <%= item.phone %></p>
+		<p>Адрес: <%= item.address %></p>
+		<p>Заказ: <%= item.orders_input %></p>
+	</dev>			
+<% end %>
