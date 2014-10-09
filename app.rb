@@ -68,3 +68,8 @@ post '/place_order' do
 	
   	erb :place_order
 end
+
+
+get '/internet' do
+	erb :internet
+end
