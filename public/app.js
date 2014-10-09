@@ -76,6 +76,11 @@ function cart_get_orders()
 	return orders;
 }
 
+function cancel_order()
+{
+	return false;
+}
+
 // function get_number_products()
 // {
  
